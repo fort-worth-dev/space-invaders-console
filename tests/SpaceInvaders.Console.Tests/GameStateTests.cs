@@ -11,6 +11,7 @@ public sealed class GameStateTests
     state.Width.Should().Be(30);
     state.Height.Should().Be(20);
     state.Player.Should().Be(new PlayerState(15, 19));
+    state.Projectiles.Should().BeEmpty();
     state.FrameNumber.Should().Be(0);
   }
 

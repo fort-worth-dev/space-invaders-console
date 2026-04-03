@@ -15,7 +15,8 @@ public sealed class SpectreLayoutRendererTests
       FrameNumber: 3,
       TotalElapsed: TimeSpan.FromMilliseconds(75),
       LastFrameDuration: TimeSpan.FromMilliseconds(25),
-      Player: new PlayerState(2, 3));
+      Player: new PlayerState(2, 3),
+      Projectiles: [new ProjectileState(2, 1)]);
 
     var scene = renderer.CreateScene(state);
     var board = renderer.BuildBoard(state);
@@ -24,7 +25,7 @@ public sealed class SpectreLayoutRendererTests
     board.Should().Be(
       """
            
-           
+        |  
            
         ^  
       """);

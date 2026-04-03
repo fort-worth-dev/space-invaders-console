@@ -17,7 +17,7 @@ internal static class Program
     var renderer = new SpectreLayoutRenderer(new SpectreConsoleWriter(AnsiConsole.Console));
     var engine = new GameEngine(
       stateStore,
-      new CoreGameSimulation(),
+      new CoreGameSimulation(new SystemConsoleInputSource()),
       renderer,
       new SystemGameClock(),
       new GameLoopOptions(targetFrameRate: 30));
