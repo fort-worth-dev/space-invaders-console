@@ -1,7 +1,7 @@
 # Track Specification: Setup core Space Invaders engine and player movement
 
 ## Goals
-- Initialize the .NET 8 project structure and core dependencies.
+- Initialize the .NET 10 project structure and core dependencies.
 - Implement a basic, high-performance game loop with Spectre.Console.
 - Add responsive player movement (A/D keys) and firing mechanics (Space).
 
