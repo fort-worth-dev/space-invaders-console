@@ -13,10 +13,16 @@ internal sealed class SpectreLayoutRenderer : IGameRenderer
 
   public string BuildBoard(GameState state) {
     var buffer = new StringBuilder((state.Width + 1) * state.Height);
+    var projectilePositions = state.Projectiles
+      .Select(projectile => (projectile.X, projectile.Y))
+      .ToHashSet();
 
     for (int y = 0; y < state.Height; y++) {
       for (int x = 0; x < state.Width; x++) {
-        var tile = state.Player.X == x && state.Player.Y == y ? '^' : ' ';
+        var tile = state.Player.X == x && state.Player.Y == y
+          ? '^'
+          : projectilePositions.Contains((x, y)) ? '|'
+          : ' ';
         buffer.Append(tile);
       }
 
