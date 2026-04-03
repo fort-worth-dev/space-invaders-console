@@ -42,11 +42,10 @@ internal sealed class SpectreLayoutRenderer : IGameRenderer
         Expand = true,
       });
     footer.Update(
-      new Columns([
-        new Markup($"[grey]Frame:[/] {state.FrameNumber}"),
-        new Markup($"[grey]Elapsed:[/] {state.TotalElapsed:mm\\:ss\\.fff}"),
-        new Markup($"[grey]FPS Target:[/] {state.LastFrameDuration.TotalMilliseconds:0} ms"),
-      ]));
+      new Markup(
+        $"[grey]Frame:[/] {state.FrameNumber}   " +
+        $"[grey]Elapsed:[/] {state.TotalElapsed:mm\\:ss\\.fff}   " +
+        $"[grey]Timestep:[/] {state.LastFrameDuration.TotalMilliseconds:0} ms"));
 
     return root;
   }
