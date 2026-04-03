@@ -1,10 +1,10 @@
 # Implementation Plan: Setup core Space Invaders engine and player movement
 
 ## Phase 1: Project Scaffolding
-- [~] Task: Initialize .NET 10 console project and test projects
+- [x] Task: Initialize .NET 10 console project and test projects
     - [x] Create the main console app and xUnit project
     - [x] Install Spectre.Console, FluentAssertions, and Moq
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Project Scaffolding' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Project Scaffolding' (Protocol in workflow.md)
 
 ## Phase 2: Game Engine Foundation
 - [ ] Task: Implement the core game loop and state management
