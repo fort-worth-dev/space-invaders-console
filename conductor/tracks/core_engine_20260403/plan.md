@@ -7,11 +7,11 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Project Scaffolding' (Protocol in workflow.md)
 
 ## Phase 2: Game Engine Foundation
-- [ ] Task: Implement the core game loop and state management
-    - [ ] Write unit tests for loop timing and state updates
-    - [ ] Implement the high-performance main loop
-- [ ] Task: Setup Spectre.Console rendering system
-    - [ ] Initialize the Canvas or Layout-based render target
+- [x] Task: Implement the core game loop and state management
+    - [x] Write unit tests for loop timing and state updates
+    - [x] Implement the high-performance main loop
+- [x] Task: Setup Spectre.Console rendering system
+    - [x] Initialize the Canvas or Layout-based render target
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Game Engine Foundation' (Protocol in workflow.md)
 
 ## Phase 3: Player Controls
